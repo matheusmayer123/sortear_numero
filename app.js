@@ -25,7 +25,7 @@ function sortear() {
         lista_numeros_sorteados.push(getRndIntegerMinMax(minimo, maximo));
 
     }
-
+    lista_numeros_sorteados.sort();
     exibirResultado('h3', `Os números sorteados foram: ${lista_numeros_sorteados}`);
     document.getElementById('btn-sortear').setAttribute('disabled', true)
     document.getElementById('btn-reiniciar').removeAttribute('disabled');
